@@ -124,7 +124,7 @@ def opt_click():
     xfrm=pyomo.TransformationFactory('gdp.bigm')
     xfrm.apply_to(model)    
     #run model
-    solver = pyomo.SolverFactory('glpk')
+    solver = pyomo.SolverFactory('glpk', executable='FuelOptimizer/usr/bin/glpsol')
     #solver.options['seconds'] = 60
     results = solver.solve(model)
     # check for convergence
