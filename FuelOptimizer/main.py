@@ -13,7 +13,7 @@ from bokeh.models.widgets import DataTable, TableColumn, NumberFormatter
 # import capacity constraint at each terminal and geolocation data for stations and terminals
 # time and distance data for all terminal-station pairs computed with openrouteservice.org
 
-pathname='data/distancetablemercFL.xlsx'
+pathname='FuelOptimizer/data/distancetablemercFL.xlsx'
 # pathnamemap='figures/FLmap.png'
 dfdistance = pd.read_excel(pathname, 'distancetable',header=0, index_col=0)
 dftime = pd.read_excel(pathname, 'timetable',header=0, index_col=0)
