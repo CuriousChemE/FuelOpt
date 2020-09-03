@@ -124,8 +124,8 @@ def opt_click():
     xfrm=pyomo.TransformationFactory('gdp.bigm')
     xfrm.apply_to(model)    
     #run model
-    solver = pyomo.SolverFactory('cbc')
-    solver.options['seconds'] = 60
+    solver = pyomo.SolverFactory('glpk')
+    #solver.options['seconds'] = 60
     results = solver.solve(model)
     # check for convergence
     if 'infeasible' in (results['Solver'][0])['Termination message']:
