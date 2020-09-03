@@ -1,0 +1,72 @@
+# This file created by conda-build 3.18.11
+# meta.yaml template originally from:
+# /Users/runner/runners/2.160.0/work/1/s/recipe, last modified Sat Nov  2 21:40:10 2019
+# ------------------------------------------------
+
+package:
+    name: glpk
+    version: '4.65'
+source:
+    fn: glpk-4.65.tar.gz
+    patches:
+        - remove_unnecessary_warning.diff
+    sha256: 4281e29b628864dfe48d393a7bedd781e5b475387c20d8b0158f329994721a10
+    url: http://ftp.gnu.org/gnu/glpk/glpk-4.65.tar.gz
+build:
+    number: '1002'
+    string: h65ac59c_1002
+requirements:
+    build:
+        - cctools 921 h5ba7a2e_4
+        - clang 9.0.0 h28b9765_1
+        - clang_osx-64 9.0.0 h22b1bf0_3
+        - clangxx 9.0.0 1
+        - compiler-rt 9.0.0 h2b4a0d1_1
+        - ld64 409.12 h3c32e8a_4
+        - libcxx 9.0.0 h89e68fa_1
+        - libllvm9 9.0.0 h770b8ee_2
+        - tapi 1000.10.8 h770b8ee_3
+    host:
+        - gmp 6.1.2 h0a44026_1000
+        - libcxx 9.0.0 h89e68fa_1
+        - make 4.2.1 h1de35cc_2004
+    run:
+        - gmp >=6.1.2,<7.0a0
+        - gmp >=6.1.2,<7.0a0
+test:
+    commands:
+        - glpsol --mps plan.mps
+        - python setup.py develop test
+        - python test_ctypes.py
+        - test -f ${PREFIX}/lib/libglpk.dylib
+    files:
+        - plan.mps
+        - setup.py
+        - spam.c
+        - test.c
+        - test_ctypes.py
+    requires:
+        - clang_osx-64 9.*
+        - python 3.6.*
+        - setuptools
+about:
+    description: 'The GLPK (GNU Linear Programming Kit) package is intended for solving
+
+        large-scale linear programming (LP), mixed integer programming (MIP), and
+
+        other related problems. It is a set of routines written in ANSI C and
+
+        organized in the form of a callable library.
+
+        '
+    home: https://www.gnu.org/software/glpk/
+    license: GPL3
+    summary: GNU Linear Programming Kit
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - aebrahim
+        - jakirkham
+        - jjhelmus
+        - snorfalorpagus

@@ -1,0 +1,39 @@
+{
+  "paths": [
+    {
+      "_path": "bin/glpsol",
+      "file_mode": "binary",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/usr/local/miniconda/conda-bld/glpk_1572730964671/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+      "sha256": "b1bb23244d85633c39769e7d3636ca4397fed924c14c2c81e6d275b1a72a00bc",
+      "size_in_bytes": 42420
+    },
+    {
+      "_path": "include/glpk.h",
+      "path_type": "hardlink",
+      "sha256": "72978196b4a10f86acdceabc9cf6ffa045b422b08477ef0ea81506a4584fd145",
+      "size_in_bytes": 39954
+    },
+    {
+      "_path": "lib/libglpk.40.dylib",
+      "file_mode": "binary",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/usr/local/miniconda/conda-bld/glpk_1572730964671/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+      "sha256": "c0334fc86ee76efa9b80e643af60ef145a83624001866f7339fa96414d114b53",
+      "size_in_bytes": 1120460
+    },
+    {
+      "_path": "lib/libglpk.a",
+      "path_type": "hardlink",
+      "sha256": "ec1f23b2ea2094ebe5cc29394163487b38bdd89bcb0b8b1ae0e876c94286cb76",
+      "size_in_bytes": 1670488
+    },
+    {
+      "_path": "lib/libglpk.dylib",
+      "path_type": "softlink",
+      "sha256": "c0334fc86ee76efa9b80e643af60ef145a83624001866f7339fa96414d114b53",
+      "size_in_bytes": 1120460
+    }
+  ],
+  "paths_version": 1
+}

@@ -1,0 +1,14 @@
+{
+  "arch": "x86_64",
+  "build": "h65ac59c_1002",
+  "build_number": 1002,
+  "depends": [
+    "gmp >=6.1.2,<7.0a0"
+  ],
+  "license": "GPL3",
+  "name": "glpk",
+  "platform": "osx",
+  "subdir": "osx-64",
+  "timestamp": 1572731206471,
+  "version": "4.65"
+}

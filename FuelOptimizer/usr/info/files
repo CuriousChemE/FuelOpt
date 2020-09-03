@@ -1,0 +1,5 @@
+bin/glpsol
+include/glpk.h
+lib/libglpk.40.dylib
+lib/libglpk.a
+lib/libglpk.dylib
