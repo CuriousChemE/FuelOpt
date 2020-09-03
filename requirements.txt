@@ -2,3 +2,4 @@ bokeh
 pyomo
 pandas
 xlrd
+coincbc
