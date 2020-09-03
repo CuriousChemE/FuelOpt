@@ -1,3 +1,4 @@
 bokeh
 pyomo
 pandas
+xlrd
